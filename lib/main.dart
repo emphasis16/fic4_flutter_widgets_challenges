@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_aspectratio_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_center_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic_layout/fic_colum_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_expanded_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_gridview_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic_layout/fic_listview_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_padding_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic_layout/fic_row_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_sizedbox_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_stack_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_wrap_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic_widget/fic_button_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic_widget/fic_circled_avatar_widget.dart';
 import 'package:project_flutter_pertama/tugas/basic_widget/fic_container_widget.dart';
@@ -53,7 +61,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FICListViewWidget(),
+      home: FICWrapWidget(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),
