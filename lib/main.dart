@@ -1,4 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_colum_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_listview_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_layout/fic_row_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_button_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_circled_avatar_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_container_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_icon_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_image_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_scaffold_widget.dart';
+import 'package:project_flutter_pertama/tugas/basic_widget/fic_text_widget.dart';
+
 import 'package:project_flutter_pertama/widget_lesson/basic_form/dialog_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_form/form_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_layout/aspectratio_widget.dart';
@@ -17,6 +28,7 @@ import 'package:project_flutter_pertama/widget_lesson/basic_widget/container_wid
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/icon_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/image_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/basic_widget/text_widget.dart';
+import 'package:project_flutter_pertama/widget_lesson/home_page.dart';
 import 'package:project_flutter_pertama/widget_lesson/navigation/bottom_navbar.dart';
 import 'package:project_flutter_pertama/widget_lesson/navigation/drawer_widget.dart';
 import 'package:project_flutter_pertama/widget_lesson/navigation/navigation_pop.dart';
@@ -36,11 +48,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SliverWidget(),
+      home: FICListViewWidget(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),
